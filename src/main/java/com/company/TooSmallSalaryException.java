@@ -1,9 +1,10 @@
 package com.company;
 
-public class TooSmallSalaryException extends Exception{
+public class TooSmallSalaryException extends Exception {
 
-        double salary;
-        TooSmallSalaryException(double salary){
-            this.salary=salary;
+    double salary;
+
+    TooSmallSalaryException(double salary) {
+        this.salary = salary;
     }
 }

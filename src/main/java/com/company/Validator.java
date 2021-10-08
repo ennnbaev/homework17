@@ -6,9 +6,10 @@ public class Validator {
             throw new TooSmallSalaryException(salary);
         }
     }
+
     public static void checkFio(String input) throws ImpossibleNameException {
         String regex = "[A-z]*";
-        if (!input.matches(regex)||input.equals("")) {
+        if (!input.matches(regex) || input.equals("")) {
             throw new ImpossibleNameException(input);
         }
     }
